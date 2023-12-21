@@ -9,6 +9,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins&family=Rethink+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&family=Oswald:wght@300;400;500;600;700&family=Poppins&family=Rethink+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -27,15 +32,18 @@
                 content-visibility: auto;
             }
         }
+
+        .nav {
+            font-family: 'Oswald', sans-serif;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="bg-transparent border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img class="h-8" src="https://img.icons8.com/cotton/64/bread-and-rye--v1.png"
-                    alt="bread-and-rye--v1" />
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 nav">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 max-md:p-1 ">
+            <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img class="h-16 bg-white rounded-full" src="{{ asset('images/nice.png') }}" alt="bread-and-rye--v1" />
             </a>
             <div class="flex md:order-2">
                 <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
@@ -99,6 +107,14 @@
                     <li>
                         <a href="#"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">BLOG</a>
                     </li>
                 </ul>
             </div>
